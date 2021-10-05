@@ -1,0 +1,11 @@
+
+.mat-tab-group {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eee;
+  }
+
+.mat-tab label{
+    background-color: plum;
+}
