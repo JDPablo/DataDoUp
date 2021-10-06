@@ -3,16 +3,21 @@
 </div>
 <div id="login_box">
     <form>
-        <input id="enter"
+        <input  onfocus="this.value = ''"
         type="text"
         id="login"
         name="login"
         value="xxx-xxx"
+        [(ngModel)]="login123"
         maxlength="6"
-        style="text-align: center;"><br>
+        style="text-align: center;"
+        ><br>
     </form>
 </div>
 
-<div id="submit">
+
+    <div *ngIf="login123 == id1 || login123 == id2 || login123 == id3">
+        <div id="submit">
     <button id="enter_button" routerLink='data'> Submit</button>
+    </div>
 </div>
