@@ -3,9 +3,10 @@
     width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #eee;
+    border:1px solid #aaa;
   }
 
-.mat-tab label{
+/* .tabs label:active {
     background-color: plum;
-}
+    border-bottom:5px solid royalblue;
+} */
