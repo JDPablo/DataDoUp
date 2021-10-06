@@ -1,4 +1,10 @@
 
+ .style-mixin {
+    border-width: 9px;
+    border-style: solid;
+    border-color: orange;
+
+}
 .mat-tab-group {
     width: 500px;
     margin: 0 auto;
@@ -6,7 +12,11 @@
     border:1px solid #aaa;
   }
 
-/* .tabs label:active {
-    background-color: plum;
-    border-bottom:5px solid royalblue;
-} */
+  :host ::ng-deep .mat-tab-label-active {
+    width:100px;
+    border-bottom: 3px solid royalblue;
+  }
+
+  .content{
+    padding: 10px;
+  }
