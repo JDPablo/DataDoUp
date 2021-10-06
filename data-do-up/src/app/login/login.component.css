@@ -3,31 +3,27 @@ body{
 }
 
 #login_text{
-   
-
     position: absolute;
-    top: 30%;
+    top: 28%;
     text-align: center;
-    left: 45%;
-    font-size: 30px;
-    
-
-    
+    left: 41.4%;
+    font-size: 40px;
+    color:black;
+    font-family: monospace;
 }
 
-#login_box { 
+#login_box{ 
     position: absolute;
-    top: 40%;
+    top: 37%;
     text-align: center;
-    left: 48%;
+    left: 47%;
     font-size: 30px;
 }
 
-#submit { 
+#submit{ 
     position: absolute;
-    top: 45%;
+    top: 41%;
     text-align: center;
-    left: 52%;
+    left: 49.8%;
     font-size: 30px;
-
 }
