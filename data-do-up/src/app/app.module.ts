@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    DataTabsComponent
+    DataTabsComponent,
     LoginComponent,
     DataComponent
   ],
@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatTabsModule,
     BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
