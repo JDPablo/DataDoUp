@@ -1,0 +1,29 @@
+body{ 
+    background-image: url("https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2067&q=80");
+}
+
+#login_text{
+    position: absolute;
+    top: 28%;
+    text-align: center;
+    left: 41.4%;
+    font-size: 40px;
+    color:black;
+    font-family: monospace;
+}
+
+#login_box{ 
+    position: absolute;
+    top: 37%;
+    text-align: center;
+    left: 47%;
+    font-size: 30px;
+}
+
+#submit{ 
+    position: absolute;
+    top: 41%;
+    text-align: center;
+    left: 49.8%;
+    font-size: 30px;
+}
