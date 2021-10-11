@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatTabsModule} from '@angular/material/tabs';
+//import {MatTabsModule,} from '@angular/material/tabs';
 
 @Component({
   selector: 'app-data-tabs',
