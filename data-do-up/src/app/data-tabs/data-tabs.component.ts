@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import '../data.json'
 //import {MatTabsModule,} from '@angular/material/tabs';
 
 @Component({
