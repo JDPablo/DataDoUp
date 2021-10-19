@@ -1,5 +1,42 @@
+  
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
-  <mat-tab label="Raw"><div class="content"> Raw Data Placeholder</div> </mat-tab>
+  <mat-tab label="Raw">
+  <table border="1">
+  <caption> 10/4/21 </caption>
+    <thead>
+      <tr>
+        <th>AnonymizedID</th>
+        <th>Job Title</th>
+        <th>Months on Job</th>
+        <th>Happiness Rating (%)</th>
+        <th>Stress Rating (%)</th> 
+        <th> Minutes In Relax Room </th>
+        <th>Vacation In Last Three Months</th>
+        <th>Vacation In Last Six Months</th>
+        <th> # Of Active Projects </th>
+        <th> Specific Stressors </th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+      <td>{{item.employeeInfo.anonymizedID}}</td>
+      <td>{{item.employeeInfo.jobTitle}}</td>
+      <td>{{item.employeeInfo.monthsOnJob}}</td>
+      <td>{{item.happinessRating}}</td>
+      <td>{{item.stressRating}}</td>
+      <td>{{item.minInRelaxRoom}}</td>
+      <td>{{item.hadVacationInLastThreeMonths}}</td>
+      <td>{{item.hadVacationInLastSixMonths}}</td>
+      <td>{{item.numOfActiveProjects}}</td>
+      <td>Personal: {{item.specificStressors.personal}} <br><br>
+      Work: {{item.specificStressors.work}}
+      </td>
+
+    </tr>
+    </tbody>
+  </table> 
+   </mat-tab>
   <mat-tab label="Mined"><div class="content"> Mined Data Placeholder</div> </mat-tab>
   <mat-tab label="Visualized"><div class="content"> Visualized Data Placeholder</div> </mat-tab>
+ 
 </mat-tab-group>

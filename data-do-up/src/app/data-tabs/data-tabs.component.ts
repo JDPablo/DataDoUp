@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import weeklyData from './data10421.json';
 //import {MatTabsModule,} from '@angular/material/tabs';
 
 @Component({
@@ -7,10 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-tabs.component.css']
 })
 export class DataTabsComponent {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+ data = weeklyData.employees;
 }

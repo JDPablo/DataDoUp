@@ -6,16 +6,29 @@
 
 }
 .mat-tab-group {
-    width: 500px;
+    width: auto;
+    background-color: #fff;
+    display: block;
     margin: 0 auto;
     padding: 20px;
     border:1px solid #aaa;
   }
 
-  :host ::ng-deep .mat-tab-label-active {
-    width:100px;
-    border-bottom: 3px solid royalblue;
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  caption {
+    font-weight: 900;
   }
+
+  table{
+    width: 100%;
+    overflow-x:scroll;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #eee;
+    font-size: 12px;
+  }
+
 
   .content{
     padding: 10px;
