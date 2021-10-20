@@ -1,0 +1,41 @@
+{
+    "employees": [
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 12
+            },
+            "date": "10/4/21",
+            "happinessRating": 80,
+            "stressRating": 40,
+            "minInRelaxRoom": 45,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3,
+            "specificStressors": {
+                "personal": "upcoming doctor's appointment",
+                "work": "upcoming deadlines, performance review"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 1
+            },
+            "date": "10/4/21",
+            "happinessRating": 80,
+            "stressRating": 80,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 1,
+            "specificStressors": {
+                "personal": "no money",
+                "work": "working in a new stack"
+            }
+        }
+    ]
+  
+}

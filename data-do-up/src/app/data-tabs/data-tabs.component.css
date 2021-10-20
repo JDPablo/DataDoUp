@@ -1,10 +1,4 @@
 
- .style-mixin {
-    border-width: 9px;
-    border-style: solid;
-    border-color: orange;
-
-}
 .mat-tab-group {
     width: 500px;
     margin: 0 auto;
