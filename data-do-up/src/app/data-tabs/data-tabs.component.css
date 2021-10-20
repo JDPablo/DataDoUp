@@ -5,7 +5,9 @@
     padding: 20px;
     border:1px solid #aaa;
   }
-
+table{
+  background-color: white;
+}
   :host ::ng-deep .mat-tab-label-active {
     width:100px;
     border-bottom: 3px solid royalblue;

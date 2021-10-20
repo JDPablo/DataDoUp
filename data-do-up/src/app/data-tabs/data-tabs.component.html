@@ -1,10 +1,31 @@
+<script>
+let i; 
+let table = '<table>';
+while ( i < data.length){
+  table += '<tr>';
+  for(let x = 0; x < data.key.length; x++) {
+    table += '<td>' + data.key[x] + '</td>' + '<td>' + data.value[x] + '</td>';
+  }
+  table += '</tr>';
+  i++;
+}
+table += '</table>';
+document.getElementbyId('showData') = table;
+</script>
+
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
-  <mat-tab label="Raw"><div class="content"> 
-  <table>
-  <ngFor="let item from data"> 
-  <td> {{item.employeeInfo.jobTitle}} </td>
+  <mat-tab label="Raw">
+  <div id="showData"></div>
+  <table> 
+    <thead>
+    <tr *ngFor="let item of data[0] | keyvalue">
+    <th>{{item.key}}</th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data[0] | keyvalue"> <td>{{item.value}}</td> </tr>
+    </tbody>
   </table>
-  </div> </mat-tab>
+  </mat-tab>
   <mat-tab label="Mined"><div class="content"> Mined Data Placeholder</div> </mat-tab>
   <mat-tab label="Visualized"><div class="content"> Visualized Data Placeholder</div> </mat-tab>
 </mat-tab-group>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import weeklyData from "./data10421.json";
 
 @Component({
   selector: 'app-data',
@@ -12,7 +11,5 @@ export class DataComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
- data = weeklyData.employees;
 
 }
