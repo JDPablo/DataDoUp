@@ -1,0 +1,10 @@
+.button-row {
+    margin:auto;
+    display:block;  
+    width: 500px;
+    
+}
+
+.button-row .mat-button-base {
+    margin: 8px 8px 8px 8px;
+  }
