@@ -1,5 +1,10 @@
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
-  <mat-tab label="Raw"><div class="content"> Raw Data Placeholder</div> </mat-tab>
+  <mat-tab label="Raw"><div class="content"> 
+  <table>
+  <ngFor="let item from data"> 
+  <td> {{item.employeeInfo.jobTitle}} </td>
+  </table>
+  </div> </mat-tab>
   <mat-tab label="Mined"><div class="content"> Mined Data Placeholder</div> </mat-tab>
   <mat-tab label="Visualized"><div class="content"> Visualized Data Placeholder</div> </mat-tab>
 </mat-tab-group>
