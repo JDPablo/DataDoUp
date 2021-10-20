@@ -1,8 +1,9 @@
 .button-row {
     margin:auto;
-    display:block;  
+    display:flex;  
     width: 500px;
-    
+    justify-content: center;
+
 }
 
 .button-row .mat-button-base {
