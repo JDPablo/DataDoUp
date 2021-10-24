@@ -1,23 +1,26 @@
 
- .style-mixin {
-    border-width: 9px;
-    border-style: solid;
-    border-color: orange;
-
-}
-.mat-tab-group {
-    width: auto;
-    background-color: #fff;
-    display: block;
+.mat-tab-group { 
+  background-color: white;
+    width: 500px;
     margin: 0 auto;
     padding: 20px;
     border:1px solid #aaa;
   }
-
-  tr:nth-child(even){background-color: #f2f2f2}
-  
-  caption {
-    font-weight: 900;
+table{
+ 
+  width: 500px;
+  border: 1px solid #aaa;
+  text-transform: capitalize;
+}
+th {
+  text-align: center;
+}
+tr:nth-child(even){
+  background-color: #eee;
+}
+  :host ::ng-deep .mat-tab-label-active {
+    width:100px;
+    border-bottom: 3px solid royalblue;
   }
 
   table{
