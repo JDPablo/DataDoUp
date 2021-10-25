@@ -23,6 +23,16 @@ tr:nth-child(even){
     border-bottom: 3px solid royalblue;
   }
 
+  table{
+    width: 100%;
+    overflow-x:scroll;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #eee;
+    font-size: 12px;
+  }
+
+
   .content{
     padding: 10px;
   }
