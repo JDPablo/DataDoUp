@@ -1,25 +1,118 @@
-
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
   <mat-tab label="Raw">
-  <table>
-    <caption>10/04/2021</caption>
-    <tr *ngFor="let item of data[0].employeeInfo | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[0].employeeInputs | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[0].specificStressors | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr>
-    <br><br>
-    <tr *ngFor="let item of data[1].employeeInfo | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[1].employeeInputs | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[1].specificStressors | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr>
-  </table>
+    <table>
+      <td>10/04/2021</td>
+      <tr *ngFor="let item of data[0].employeeInfo | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[0].employeeInputs | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[0].specificStressors | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr>
+        <p></p>
+      </tr>
+      <td>10/04/2021</td>
+      <tr *ngFor="let item of data[1].employeeInfo | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[1].employeeInputs | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[1].specificStressors | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr>
+        <p></p>
+      </tr>
+      <td>9/27/2021</td>
+      <tr *ngFor="let item of data[2].employeeInfo | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[2].employeeInputs | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[2].specificStressors | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr>
+        <p></p>
+      </tr>
+      <td>9/27/2021</td>
+      <tr *ngFor="let item of data[3].employeeInfo | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[3].employeeInputs | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+      <tr *ngFor="let item of data[3].specificStressors | keyvalue">
+        <td>{{item.key}} </td>
+        <td> {{item.value}} </td>
+      </tr>
+    </table>
   </mat-tab>
-  <mat-tab label="Mined"><div class="content"> Mined Data Placeholder</div> </mat-tab>
-  <mat-tab label="Visualized"><div class="content"> Visualized Data Placeholder</div> </mat-tab>
-  <mat-tab label="Report"><div class="content"> Hello USER, Here is the Report for: <strong>{{currentDate | date:'MM/dd/yyyy'}} </strong>
-  </div> </mat-tab>
+  <mat-tab label="Mined">
+    <tr>
+      <div class="content"> Employee ID: 10436569</div>
+      <div class="content"> Employee Info: </div>
+      <div class="content"> Week of 10/04/21</div>
+      <div class="content"> Week of 9/27/21</div>
+      <div class="content"> <u>Insights</u> <br>
+        Happiness Rating: <br>
+        Minutes in Relax Room: <br>
+        Number of projects: <br>
+        Stress Level:
+      </div>
+    </tr>
+    <tr>
+      <div class="content"> Employee ID: 10410410</div>
+      <div class="content"> Employee Info: </div>
+      <div class="content"> Week of 10/04/21</div>
+      <div class="content"> Week of 9/27/21</div>
+      <div class="content"> <u>Insights</u> <br>
+        Happiness Rating: <br>
+        Minutes in Relax Room: <br>
+        Number of projects: <br>
+        Stress Level:
+      </div>
+    </tr>
+  </mat-tab>
+  <mat-tab label="Visualized">
+    <tr>
+      <div class="content"> Employee ID: 10436569</div>
+      <div class="content"> Week of 10/04/21</div>
+
+      <ngx-charts-bar-vertical [results]= "one" [view]="view">
+      </ngx-charts-bar-vertical>
+      <div class="content"> Week of 9/27/21</div>
+      <ngx-charts-bar-vertical [results]= "two" [view]="view">
+      </ngx-charts-bar-vertical>
+    </tr>
+    <tr>
+      <div class="content"> Employee ID: 10410410</div>
+      <div class="content"> Week of 10/04/21</div>
+
+      <ngx-charts-bar-vertical [results]= "three" [view]="view">
+      </ngx-charts-bar-vertical>
+      <div class="content"> Week of 9/27/21</div>
+      <ngx-charts-bar-vertical [results]= "four" [view]="view">
+      </ngx-charts-bar-vertical>
+    </tr>
+  </mat-tab>
+  <mat-tab label="Report">
+    <div class="content"> Report Placeholder</div>
+  </mat-tab>
 </mat-tab-group>

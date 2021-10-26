@@ -1,7 +1,8 @@
 
 .mat-tab-group { 
   background-color: white;
-    width: 500px;
+    width: 700px;
+    height: 855px;
     margin: 0 auto;
     padding: 20px;
     border:1px solid #aaa;
@@ -35,4 +36,10 @@ tr:nth-child(even){
 
   .content{
     padding: 10px;
+  }
+
+  #divChart{
+    display: block;
+    width: 400px;
+    height: 400px;
   }
