@@ -38,6 +38,12 @@ tr:nth-child(even){
     padding: 10px;
   }
 
+  .heading{
+    font-weight: bold;
+
+
+  }
+
   #divChart{
     display: block;
     width: 400px;

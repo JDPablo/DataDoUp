@@ -91,26 +91,49 @@
     </tr>
   </mat-tab>
   <mat-tab label="Visualized">
+
+    <tr>
+      <div class="heading content "> Recommendations</div>
+      <div class="content"> 
+        We recommend...
+        <ul>
+          <li>Spending more time in the relaxation room</li>
+          <li>Try to come up with a new time management plan to handle 3 projects at once</li>
+          <li>Consider taking a vacation soon</li>
+
+        </ul>
+      </div>
+
+    </tr>
+
+   
     <tr>
       <div class="content"> Employee ID: 10436569</div>
       <div class="content"> Week of 10/04/21</div>
 
-      <ngx-charts-bar-vertical [results]= "one" [view]="view">
+      <ngx-charts-bar-vertical [results]="one" [view]="view">
       </ngx-charts-bar-vertical>
       <div class="content"> Week of 9/27/21</div>
-      <ngx-charts-bar-vertical [results]= "two" [view]="view">
+      <ngx-charts-bar-vertical [results]="two" [view]="view">
       </ngx-charts-bar-vertical>
     </tr>
     <tr>
       <div class="content"> Employee ID: 10410410</div>
       <div class="content"> Week of 10/04/21</div>
 
-      <ngx-charts-bar-vertical [results]= "three" [view]="view">
+      <ngx-charts-bar-vertical [results]="three" [view]="view">
       </ngx-charts-bar-vertical>
       <div class="content"> Week of 9/27/21</div>
-      <ngx-charts-bar-vertical [results]= "four" [view]="view">
+      <ngx-charts-bar-vertical [results]="four" [view]="view">
       </ngx-charts-bar-vertical>
+
     </tr>
+   
+
+
+    
+
+
   </mat-tab>
   <mat-tab label="Report">
     <div class="content"> Report Placeholder</div>
