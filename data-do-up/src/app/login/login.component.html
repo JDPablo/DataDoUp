@@ -10,7 +10,7 @@
         value="xxx-xxx"
         [(ngModel)]="login123"
         maxlength="6"
-        style="text-align: center;"
+        style="text-align: center; padding: 10px"
         ><br>
     </form>
 </div>
@@ -18,6 +18,6 @@
 
     <div *ngIf="login123 == id1 || login123 == id2 || login123 == id3">
         <div id="submit">
-    <button id="enter_button" routerLink='data'> Submit</button>
+    <a class="card" rel="noopener" style="background-color:#5555ff; color:#fff" routerLink='data'> Submit</a>
     </div>
 </div>
