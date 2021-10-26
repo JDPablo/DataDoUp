@@ -295,27 +295,14 @@
   </style>
   
   <!-- Toolbar -->
-<<<<<<< HEAD
-
-=======
   <div class="toolbar" role="banner">
     <span style="padding-left:20px">Welcome</span>
       <div class="spacer"></div>
   </div>
->>>>>>> main
   
   <div class="content" role="main">
   
     <!-- Highlight Card -->
-<<<<<<< HEAD
-    <div class="card highlight-card card-small">
-  
-  
-      <h1>Welcome to DataDoUp</h1>
-  
-  
-    </div>
-=======
     <h1>
   
       Welcome to DataDoUp
@@ -323,19 +310,11 @@
     </h1>
 
     <a target = '_self' class="card" rel="noopener" style="background-color:#5555ff; color:#fff">Import Data</a>
->>>>>>> main
   
     <!-- Resources -->
     <h2>Operations</h2>
     <p>Below are operations that can be done with the data:</p>
-  
-<<<<<<< HEAD
-    <div class="button-row">
-      <button  mat-raised-button routerLink='raw-data'>Raw Data</button>
-        <button mat-raised-button routerLink='insights'>Insights</button>
-        <button mat-raised-button routerLink='reccomendations'>Reccomendations</button>
-        <button routerLink='reports' mat-raised-button>Reports</button>
-=======
+  <!--
     <div class="card-container">
       <a target = '_self' class="card" rel="noopener" >
         <span>Raw Data</span>
@@ -349,13 +328,13 @@
         <span>Recommendations</span>
       </a>
   
-      <a class="card" target="_blank" rel="noopener">
+      <a class="card" target="_blank" rel="noopener" routerLink='reports'>
         <span>Report</span>
       </a>
-  
->>>>>>> main
-    </div>
-  
+
+      
+  </div>
+-->
     
   <app-data-tabs></app-data-tabs>
     <!-- Links 
@@ -402,7 +381,7 @@
   
     <!-- Footer -->
     <footer>
-        <a target = '_self' class="card" rel="noopener" style="background-color:#5555ff; color:#fff"> Log Out</a>
+        <a target = '_blank' class="card" rel="noopener" routerLink="/login" style="background-color:#5555ff; color:#fff"> Log Out</a>
     </footer>
   
   
