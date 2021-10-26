@@ -6,7 +6,8 @@ import { DataTabsComponent } from './data-tabs/data-tabs.component';
 
 const routes: Routes =[{path: '', component: LoginComponent}, 
 {path: 'data', component: DataComponent},
-{path: 'datatabs', component: DataTabsComponent}
+{path: 'datatabs', component: DataTabsComponent},
+{path: 'login', component: LoginComponent}
 ];
 
 @NgModule({

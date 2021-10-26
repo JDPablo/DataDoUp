@@ -16,6 +16,8 @@ data = weeklyData.employees;
   ngOnInit(): void {
     
 }
+currentDate = new Date();
+
 
 
 }
