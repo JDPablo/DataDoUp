@@ -41,6 +41,46 @@
                 "personal": "no money",
                 "work": "working in a new stack"
             }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 12
+            },
+            "date": "9/27/21",
+            "employeeInputs": {
+            "happinessRating": 80,
+            "stressRating": 20,
+            "minInRelaxRoom": 20,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "getting assigned to 2 new projects"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 0
+            },
+            "date": "9/27/21",
+            "employeeInputs": {
+            "happinessRating": 100,
+            "stressRating": 10,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "no money",
+                "work": "onboarding process"
+            }
         }
     ]
   
