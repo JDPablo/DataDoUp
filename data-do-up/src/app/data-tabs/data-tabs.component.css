@@ -4,14 +4,17 @@
     width: 700px;
     display: block;
     overflow-y: scroll;
-    height: 800px;
+    max-height: 800px;
     margin: 0 auto;
     padding: 20px;
     border:1px solid #aaa;
   }
 
+
   .content{
     padding: 10px;
+    background-color: lavenderblush;
+    margin: 5px;
   }
 
   .heading{

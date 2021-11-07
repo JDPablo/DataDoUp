@@ -7,27 +7,14 @@ table{
 
   thead{
     font-size: 15px;
+    font-weight: 800;
   }
 
   th {
     text-align: center;
   }
   tr:nth-child(even){
-    background-color: #eee;
+    background-color: lavenderblush;
   }
-    :host ::ng-deep .mat-tab-label-active {
-      width:100px;
-      border-bottom: 3px solid royalblue;
-    }
-
-    .content{
-      padding: 10px;
-    }
-  
-    .heading{
-      font-weight: bold;
-  
-  
-    }
   
   

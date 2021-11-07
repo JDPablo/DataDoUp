@@ -6,10 +6,14 @@ import weeklyData from "../data-tabs/data10421.json";
   templateUrl: './raw-data.component.html',
   styleUrls: ['./raw-data.component.css']
 })
-export class RawDataComponent {
+export class RawDataComponent{
+ 
+ 
+  index : any;
   
   data = weeklyData.employees;
- 
+
+
 }
   
   
