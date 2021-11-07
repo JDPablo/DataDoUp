@@ -1,94 +1,87 @@
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
   <mat-tab label="Raw">
-    <table>
-      <td>10/04/2021</td>
-      <tr *ngFor="let item of data[0].employeeInfo | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[0].employeeInputs | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[0].specificStressors | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr>
-        <p></p>
-      </tr>
-      <td>10/04/2021</td>
-      <tr *ngFor="let item of data[1].employeeInfo | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[1].employeeInputs | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[1].specificStressors | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr>
-        <p></p>
-      </tr>
-      <td>9/27/2021</td>
-      <tr *ngFor="let item of data[2].employeeInfo | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[2].employeeInputs | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[2].specificStressors | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr>
-        <p></p>
-      </tr>
-      <td>9/27/2021</td>
-      <tr *ngFor="let item of data[3].employeeInfo | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[3].employeeInputs | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-      <tr *ngFor="let item of data[3].specificStressors | keyvalue">
-        <td>{{item.key}} </td>
-        <td> {{item.value}} </td>
-      </tr>
-    </table>
+    <app-raw-data></app-raw-data>
   </mat-tab>
   <mat-tab label="Mined">
     <tr>
-      <div class="content"> Employee ID: 10436569</div>
-      <div class="content"> Employee Info: </div>
-      <div class="content"> Week of 10/04/21</div>
-      <div class="content"> Week of 9/27/21</div>
-      <div class="content"> <u>Insights</u> <br>
-        Happiness Rating: <br>
-        Minutes in Relax Room: <br>
-        Number of projects: <br>
-        Stress Level:
+      <div class="content" > <td> Employee ID: </td>
+      
+      <td>{{data[0].employeeInfo.anonymizedID}} </td>
+      
       </div>
-    </tr>
+      </tr>
+      <div class="content"> 
+      <tr>
+      <u>Employee Info:</u>
+      </tr> 
+      <tr>
+      <td> Job Title: {{data[0].employeeInfo.jobTitle}} </td>
+      </tr>
+      <tr>
+      <td> Months on the job: {{data[0].employeeInfo.monthsOnJob}} </td>
+      </tr>
+      </div>
+    
+     
+      <div class="content"> <strong>Week of 10/04/21 </strong>
+     <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[0].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[0].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[0].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[0].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+      <div class="content"> <strong>Week of 9/27/21</strong>
+      <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[2].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[2].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[2].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[2].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+    
+    <hr>
     <tr>
-      <div class="content"> Employee ID: 10410410</div>
-      <div class="content"> Employee Info: </div>
-      <div class="content"> Week of 10/04/21</div>
-      <div class="content"> Week of 9/27/21</div>
-      <div class="content"> <u>Insights</u> <br>
-        Happiness Rating: <br>
-        Minutes in Relax Room: <br>
-        Number of projects: <br>
-        Stress Level:
+      <div class="content" > <td> Employee ID: </td>
+      
+      <td>{{data[1].employeeInfo.anonymizedID}} </td>
+      
       </div>
-    </tr>
+      </tr>
+      <div class="content"> 
+      <tr>
+      <u>Employee Info:</u>
+      </tr> 
+      <tr>
+      <td> Job Title: {{data[1].employeeInfo.jobTitle}} </td>
+      </tr>
+      <tr>
+      <td> Months on the job: {{data[1].employeeInfo.monthsOnJob}} </td>
+      </tr>
+      </div>
+    
+     
+      <div class="content"> <strong>Week of 10/04/21 </strong>
+     <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[1].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[1].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[1].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[1].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+      <div class="content"> <strong>Week of 9/27/21</strong>
+      <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[3].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[3].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[3].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[3].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+     
   </mat-tab>
   <mat-tab label="Visualized">
 
