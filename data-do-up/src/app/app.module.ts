@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { DataComponent } from './data/data.component';
 import { FormsModule } from '@angular/forms';
+import { RawDataComponent } from './raw-data/raw-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataTabsComponent,
     LoginComponent,
-    DataComponent
+    DataComponent,
+    RawDataComponent
   ],
   imports: [
     BrowserModule,
