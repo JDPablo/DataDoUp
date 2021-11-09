@@ -312,8 +312,13 @@
     <a target = '_self' class="card" rel="noopener" style="background-color:#5555ff; color:#fff">Import Data</a>
   
     <h2>Operations</h2>
-    <p>Below are operations that can be done with the data:</p>
   <app-data-tabs></app-data-tabs>
+  <p>Below are operations that can be done with the data:</p>
+  <section class="select-week" [formGroup]="weekNum">
+    <h4>Select the weeks to display:</h4>
+    <p><mat-checkbox formControlName="weekone">Week 1</mat-checkbox></p>
+    <p><mat-checkbox formControlName="weektwo">Week 2</mat-checkbox></p>
+  </section>
     <!-- Links 
     <div class="card-container">
       <a class="circle-link" title="Animations" href="https://angular.io/guide/animations" target="_blank" rel="noopener">
