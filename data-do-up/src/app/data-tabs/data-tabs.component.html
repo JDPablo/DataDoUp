@@ -1,25 +1,157 @@
-
 <mat-tab-group mat-align-tabs="center" dynamicHeight animationDuration="2000ms">
   <mat-tab label="Raw">
-  <table>
-    <caption>10/04/2021</caption>
-    <tr *ngFor="let item of data[0].employeeInfo | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[0].employeeInputs | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[0].specificStressors | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr>
-    <br><br>
-    <tr *ngFor="let item of data[1].employeeInfo | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[1].employeeInputs | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr> 
-    <tr *ngFor="let item of data[1].specificStressors | keyvalue">
-    <td>{{item.key}} </td><td> {{item.value}} </td></tr>
-  </table>
+    <app-raw-data></app-raw-data>
   </mat-tab>
-  <mat-tab label="Mined"><div class="content"> Mined Data Placeholder</div> </mat-tab>
-  <mat-tab label="Visualized"><div class="content"> Visualized Data Placeholder</div> </mat-tab>
-  <mat-tab label="Report"><div class="content"> Hello USER, Here is the Report for: <strong>{{currentDate | date:'MM/dd/yyyy'}} </strong>
-  </div> </mat-tab>
+  <mat-tab label="Mined">
+    <tr>
+      <div class="content" > <td> Employee ID: </td>
+      
+      <td>{{data[0].employeeInfo.anonymizedID}} </td>
+      
+      </div>
+      </tr>
+      <div class="content"> 
+      <tr>
+      <u>Employee Info:</u>
+      </tr> 
+      <tr>
+      <td> Job Title: {{data[0].employeeInfo.jobTitle}} </td>
+      </tr>
+      <tr>
+      <td> Months on the job: {{data[0].employeeInfo.monthsOnJob}} </td>
+      </tr>
+      </div>
+    
+     
+      <div class="content"> <strong>Week of 10/04/21 </strong>
+     <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[0].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[0].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[0].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[0].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+      <div class="content"> <strong>Week of 9/27/21</strong>
+      <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[2].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[2].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[2].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[2].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+    
+    <hr>
+    <tr>
+      <div class="content" > <td> Employee ID: </td>
+      
+      <td>{{data[1].employeeInfo.anonymizedID}} </td>
+      
+      </div>
+      </tr>
+      <div class="content"> 
+      <tr>
+      <u>Employee Info:</u>
+      </tr> 
+      <tr>
+      <td> Job Title: {{data[1].employeeInfo.jobTitle}} </td>
+      </tr>
+      <tr>
+      <td> Months on the job: {{data[1].employeeInfo.monthsOnJob}} </td>
+      </tr>
+      </div>
+    
+     
+      <div class="content"> <strong>Week of 10/04/21 </strong>
+     <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[1].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[1].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[1].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[1].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+      <div class="content"> <strong>Week of 9/27/21</strong>
+      <tr>
+      <u>Insights</u> <br>
+        Happiness Rating: {{data[3].employeeInputs.happinessRating}} <br>
+        Minutes in Relax Room: {{data[3].employeeInputs.minInRelaxRoom}} <br>
+        Number of projects: {{data[3].employeeInputs.numOfActiveProjects}} <br>
+        Stress Level: {{data[3].employeeInputs.stressRating}} 
+        </tr>
+      </div>
+     
+  </mat-tab>
+  <mat-tab label="Visualized">
+
+    <tr>
+      <div class="heading content "> Recommendations</div>
+      <div class="content"> 
+        We recommend...
+        <ul>
+          <li>Spending more time in the relaxation room</li>
+          <li>Try to come up with a new time management plan to handle 3 projects at once</li>
+          <li>Consider taking a vacation soon</li>
+
+        </ul>
+      </div>
+
+    </tr>
+
+   
+    <tr>
+      <div class="content"> Employee ID: 10436569</div>
+      <div class="content"> Week of 10/04/21</div>
+
+      <ngx-charts-bar-vertical [results]="one" [view]="view">
+      </ngx-charts-bar-vertical>
+      <div class="content"> Week of 9/27/21</div>
+      <ngx-charts-bar-vertical [results]="two" [view]="view">
+      </ngx-charts-bar-vertical>
+    </tr>
+    <tr>
+      <div class="content"> Employee ID: 10410410</div>
+      <div class="content"> Week of 10/04/21</div>
+
+      <ngx-charts-bar-vertical [results]="three" [view]="view">
+      </ngx-charts-bar-vertical>
+      <div class="content"> Week of 9/27/21</div>
+      <ngx-charts-bar-vertical [results]="four" [view]="view">
+      </ngx-charts-bar-vertical>
+
+    </tr>
+   
+
+
+    
+
+
+  </mat-tab>
+  <mat-tab label="Report">
+    <div>
+      <input type="button" value="Download PDF" (click)="toPDF()"/>
+    </div>    
+    <div class="content" id='contentToConvert' style="border:2px; border-style:solid; border-color:#0e38f1; padding: .005em; box-sizing: content-box;"> 
+      <h1>Hello Delos Labs Employees</h1>
+     <br>
+      Good job getting through the week of  <b>10/04/21</b>, we have some data that we are proud of: <br> <br>
+      <ul>
+        <li>The overall employee happiness rating is up 10%! This is an increase of 3% from last week</li>
+        <li>The productivity has increased 22.5% since last week. That's great</li>
+      </ul>
+       <br> <br>
+        There are a few things we would like to reccomend to help keep this great momentum: <br>
+        <ul>
+          <li>As a result of the holidays approaching soon, employees have reported that they are facing
+            external stressors. Please make sure to communicate with HR to discuss taking vacation time </li>
+          <li>If you are feeling extra stress, feel free to visit the relaxation room in the office to relax!</li>
+        </ul>
+      <br>
+      Overall, Delos Labs is proud of the producitvity of our employees this week. Please contact us if there is anything we can do to assist
+      in reducing stress! We can't wait to see you next week!
+      <h2>-Delos Lab Management</h2>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </mat-tab>
 </mat-tab-group>

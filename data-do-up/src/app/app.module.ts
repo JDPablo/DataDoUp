@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,12 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { DataComponent } from './data/data.component';
 import { FormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import { ReportsComponent } from './reports/reports.component';
-import { ReccomendationsComponent } from './reccomendations/reccomendations.component';
-import { InsightsComponent } from './insights/insights.component';
 import { RawDataComponent } from './raw-data/raw-data.component';
-
 
 @NgModule({
   declarations: [
@@ -23,9 +18,6 @@ import { RawDataComponent } from './raw-data/raw-data.component';
     DataTabsComponent,
     LoginComponent,
     DataComponent,
-    ReportsComponent,
-    ReccomendationsComponent,
-    InsightsComponent,
     RawDataComponent
   ],
   imports: [
@@ -33,7 +25,8 @@ import { RawDataComponent } from './raw-data/raw-data.component';
     AppRoutingModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
