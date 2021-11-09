@@ -2,7 +2,7 @@
   <mat-tab label="Raw">
     <app-raw-data></app-raw-data>
   </mat-tab>
-  <mat-tab label="Mined">
+  <mat-tab label="Mined + Visualized">
     <tr>
       <div class="content" > <td> Employee ID: </td>
       
@@ -32,6 +32,17 @@
         Stress Level: {{data[0].employeeInputs.stressRating}} 
         </tr>
       </div>
+      <br>
+      <tr>
+        <ngx-charts-bar-vertical [results]="one" 
+        [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines"
+        >
+        </ngx-charts-bar-vertical>
+      </tr>
+      <br>
       <div class="content"> <strong>Week of 9/27/21</strong>
       <tr>
       <u>Insights</u> <br>
@@ -41,7 +52,15 @@
         Stress Level: {{data[2].employeeInputs.stressRating}} 
         </tr>
       </div>
-    
+      <br>
+      <tr>
+        <ngx-charts-bar-vertical [results]="two" [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
+        </ngx-charts-bar-vertical>
+      </tr>
+      <br>
     <hr>
     <tr>
       <div class="content" > <td> Employee ID: </td>
@@ -72,6 +91,15 @@
         Stress Level: {{data[1].employeeInputs.stressRating}} 
         </tr>
       </div>
+      <br>
+      <tr>
+        <ngx-charts-bar-vertical [results]="three" [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
+        </ngx-charts-bar-vertical>
+      </tr>
+      <br>
       <div class="content"> <strong>Week of 9/27/21</strong>
       <tr>
       <u>Insights</u> <br>
@@ -81,53 +109,17 @@
         Stress Level: {{data[3].employeeInputs.stressRating}} 
         </tr>
       </div>
-     
+    <br>
+    <tr>
+      <ngx-charts-bar-vertical [results]="four" [view]="view"
+      [xAxis]="xAxis"
+      [showDataLabel]="showDataLabel"
+      [showGridLines]="showGridLines">
+      </ngx-charts-bar-vertical>
+    </tr>
+    <br>
   </mat-tab>
-  <mat-tab label="Visualized">
 
-    <tr>
-      <div class="heading content "> Recommendations</div>
-      <div class="content"> 
-        We recommend...
-        <ul>
-          <li>Spending more time in the relaxation room</li>
-          <li>Try to come up with a new time management plan to handle 3 projects at once</li>
-          <li>Consider taking a vacation soon</li>
-
-        </ul>
-      </div>
-
-    </tr>
-
-   
-    <tr>
-      <div class="content"> Employee ID: 10436569</div>
-      <div class="content"> Week of 10/04/21</div>
-
-      <ngx-charts-bar-vertical [results]="one" [view]="view">
-      </ngx-charts-bar-vertical>
-      <div class="content"> Week of 9/27/21</div>
-      <ngx-charts-bar-vertical [results]="two" [view]="view">
-      </ngx-charts-bar-vertical>
-    </tr>
-    <tr>
-      <div class="content"> Employee ID: 10410410</div>
-      <div class="content"> Week of 10/04/21</div>
-
-      <ngx-charts-bar-vertical [results]="three" [view]="view">
-      </ngx-charts-bar-vertical>
-      <div class="content"> Week of 9/27/21</div>
-      <ngx-charts-bar-vertical [results]="four" [view]="view">
-      </ngx-charts-bar-vertical>
-
-    </tr>
-   
-
-
-    
-
-
-  </mat-tab>
   <mat-tab label="Report">
     <div class="content"> Report Placeholder</div>
   </mat-tab>

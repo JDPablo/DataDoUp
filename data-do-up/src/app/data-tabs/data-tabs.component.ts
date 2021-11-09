@@ -17,6 +17,11 @@ export class DataTabsComponent implements OnInit {
   three: any[] = [];
   four: any[] = [];
   view: any = [700, 150];
+  xAxis: boolean = true;
+  yAxis: boolean = true;
+  showDataLabel: boolean = true;
+  showGridLines: boolean = false;
+  
   
   constructor() {
     Object.assign(this, { one }),
