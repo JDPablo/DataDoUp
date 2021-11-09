@@ -4,102 +4,91 @@
   </mat-tab>
   <mat-tab label="Mined">
     <tr>
-      <div class="content" > <td> Employee ID: </td>
-      
-      <td>{{data[0].employeeInfo.anonymizedID}} </td>
-      
+      <div class="content">
+        <td> Employee ID: </td>
+
+        <td>{{data[0].employeeInfo.anonymizedID}} </td>
+
       </div>
-      </tr>
-      <div class="content"> 
+    </tr>
+    <div class="content">
       <tr>
-      <u>Employee Info:</u>
-      </tr> 
-      <tr>
-      <td> Job Title: {{data[0].employeeInfo.jobTitle}} </td>
+        <u>Employee Info:</u>
       </tr>
       <tr>
-      <td> Months on the job: {{data[0].employeeInfo.monthsOnJob}} </td>
+        <td> Job Title: {{data[0].employeeInfo.jobTitle}} </td>
       </tr>
-      </div>
-    
-     
-      <div class="content"> <strong>Week of 10/04/21 </strong>
-     <tr>
-      <u>Insights</u> <br>
+      <tr>
+        <td> Months on the job: {{data[0].employeeInfo.monthsOnJob}} </td>
+      </tr>
+    </div>
+
+
+    <div class="content"> <strong>Week of 10/04/21 </strong>
+      <tr>
+        <u>Insights</u> <br>
         Happiness Rating: {{data[0].employeeInputs.happinessRating}} <br>
         Minutes in Relax Room: {{data[0].employeeInputs.minInRelaxRoom}} <br>
         Number of projects: {{data[0].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[0].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-      <div class="content"> <strong>Week of 9/27/21</strong>
+        Stress Level: {{data[0].employeeInputs.stressRating}}
+      </tr>
+    </div>
+    <div class="content"> <strong>Week of 9/27/21</strong>
       <tr>
-      <u>Insights</u> <br>
+        <u>Insights</u> <br>
         Happiness Rating: {{data[2].employeeInputs.happinessRating}} <br>
         Minutes in Relax Room: {{data[2].employeeInputs.minInRelaxRoom}} <br>
         Number of projects: {{data[2].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[2].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-    
+        Stress Level: {{data[2].employeeInputs.stressRating}}
+      </tr>
+    </div>
+
     <hr>
     <tr>
-      <div class="content" > <td> Employee ID: </td>
-      
-      <td>{{data[1].employeeInfo.anonymizedID}} </td>
-      
+      <div class="content">
+        <td> Employee ID: </td>
+
+        <td>{{data[1].employeeInfo.anonymizedID}} </td>
+
       </div>
-      </tr>
-      <div class="content"> 
+    </tr>
+    <div class="content">
       <tr>
-      <u>Employee Info:</u>
-      </tr> 
-      <tr>
-      <td> Job Title: {{data[1].employeeInfo.jobTitle}} </td>
+        <u>Employee Info:</u>
       </tr>
       <tr>
-      <td> Months on the job: {{data[1].employeeInfo.monthsOnJob}} </td>
+        <td> Job Title: {{data[1].employeeInfo.jobTitle}} </td>
       </tr>
-      </div>
-    
-     
-      <div class="content"> <strong>Week of 10/04/21 </strong>
-     <tr>
-      <u>Insights</u> <br>
+      <tr>
+        <td> Months on the job: {{data[1].employeeInfo.monthsOnJob}} </td>
+      </tr>
+    </div>
+
+
+    <div class="content"> <strong>Week of 10/04/21 </strong>
+      <tr>
+        <u>Insights</u> <br>
         Happiness Rating: {{data[1].employeeInputs.happinessRating}} <br>
         Minutes in Relax Room: {{data[1].employeeInputs.minInRelaxRoom}} <br>
         Number of projects: {{data[1].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[1].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-      <div class="content"> <strong>Week of 9/27/21</strong>
+        Stress Level: {{data[1].employeeInputs.stressRating}}
+      </tr>
+    </div>
+    <div class="content"> <strong>Week of 9/27/21</strong>
       <tr>
-      <u>Insights</u> <br>
+        <u>Insights</u> <br>
         Happiness Rating: {{data[3].employeeInputs.happinessRating}} <br>
         Minutes in Relax Room: {{data[3].employeeInputs.minInRelaxRoom}} <br>
         Number of projects: {{data[3].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[3].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-     
+        Stress Level: {{data[3].employeeInputs.stressRating}}
+      </tr>
+    </div>
+
   </mat-tab>
   <mat-tab label="Visualized">
 
-    <tr>
-      <div class="heading content "> Recommendations</div>
-      <div class="content"> 
-        We recommend...
-        <ul>
-          <li>Spending more time in the relaxation room</li>
-          <li>Try to come up with a new time management plan to handle 3 projects at once</li>
-          <li>Consider taking a vacation soon</li>
 
-        </ul>
-      </div>
 
-    </tr>
-
-   
     <tr>
       <div class="content"> Employee ID: 10436569</div>
       <div class="content"> Week of 10/04/21</div>
@@ -121,12 +110,27 @@
       </ngx-charts-bar-vertical>
 
     </tr>
-   
 
 
-    
 
 
+
+
+  </mat-tab>
+  <mat-tab label="Recommendations">
+    <tr>
+      <div class="heading content "> Recommendations</div>
+      <div class="content">
+        We recommend...
+        <ul>
+          <li>Spending more time in the relaxation room</li>
+          <li>Try to come up with a new time management plan to handle 3 projects at once</li>
+          <li>Consider taking a vacation soon</li>
+
+        </ul>
+      </div>
+
+    </tr>
   </mat-tab>
   <mat-tab label="Report">
     <div class="content"> Report Placeholder</div>
