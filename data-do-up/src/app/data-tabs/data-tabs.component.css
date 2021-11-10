@@ -28,3 +28,14 @@
     width: 400px;
     height: 400px;
   }
+  
+  h1 {text-align: center;
+  box-sizing: content-box;
+  size: 8px;
+  border:3px; 
+  border-style:solid; 
+  border-color:#0e38f1; 
+  padding: .005em;}
+  h2 {text-align: right;
+      size: 8;
+  }
