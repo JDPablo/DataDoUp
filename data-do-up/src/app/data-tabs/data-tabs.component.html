@@ -196,6 +196,44 @@
     <br />
   </mat-tab>
 
+  <mat-tab label="Recommendations">
+    <tr>
+      <div class="content">
+        <td> Employee ID: </td>
+
+        <td>{{data[0].employeeInfo.anonymizedID}} </td>
+
+      </div>
+    </tr>
+    <div class="content"> Since your stress level is {{data[0].employeeInputs.stressRating}} and you've only spent
+      {{data[0].employeeInputs.minInRelaxRoom}} minutes in the relaxation room , we recommend taking a step back from
+      your projects and spending more time in the relaxation room. </div>
+    <tr>
+      <div class="content">
+        <td> Employee ID: </td>
+
+        <td>{{data[1].employeeInfo.anonymizedID}} </td>
+
+      </div>
+      <div class="content"> Since your hapiness rating is {{data[1].employeeInputs.happinessRating}} and your number of
+        projects is {{data[1].employeeInputs.numOfActiveProjects}} , we recommend you to take a vacation! </div>
+    </tr>
+    <tr>
+      <div class="content">
+        <td> Employee ID: </td>
+
+        <td>{{data[2].employeeInfo.anonymizedID}} </td>
+
+
+      </div>
+      <div class="content"> Since your number of projects is {{data[2].employeeInputs.numOfActiveProjects}} and your
+        happiness level is {{data[2].employeeInputs.happinessRating}} , we recommend you to reduce your number of
+        projects. </div>
+    </tr>
+
+
+  </mat-tab>
+
   <mat-tab label="Report">
     <div>
       <input type="button" value="Download PDF" (click)="toPDF()" />
