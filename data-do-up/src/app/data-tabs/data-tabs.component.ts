@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import weeklyData from "./data10421.json";
+import weeklyData from "./data.json";
 import { one } from './insightdata';
 import { two } from './insightdata';
 import { three } from './insightdata';
