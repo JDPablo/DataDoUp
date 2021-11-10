@@ -13,7 +13,7 @@ export class DataComponent implements OnInit {
       weektwo: false,
     })
   }
-
+  checked = false;
   ngOnInit(): void {
   }
 }

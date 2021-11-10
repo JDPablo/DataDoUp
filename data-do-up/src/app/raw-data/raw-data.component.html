@@ -1,5 +1,6 @@
 <table>
-<thead><td>{{data[0].date}}</td></thead>
+  <div *ngIf="weekone.checked" id="weekOneTable">
+    <thead><td>{{data[0].date}}</td></thead>
       <tr *ngFor="let item of data[0].employeeInfo | keyvalue">
         <td>{{item.key}} </td>
         <td> {{item.value}} </td>
@@ -28,9 +29,11 @@
         <td>{{item.key}} </td>
         <td> {{item.value}} </td>
       </tr>
+  </div>
       <tr>
         <p></p>
       </tr>
+  <div *ngIf="weektwo.checked" id="weekTwoTable">
       <thead><td>{{data[2].date}}</td></thead>
       <tr *ngFor="let item of data[2].employeeInfo | keyvalue">
         <td>{{item.key}} </td>
@@ -60,4 +63,5 @@
         <td>{{item.key}} </td>
         <td> {{item.value}} </td>
       </tr>
-    </table>
+  </div>
+</table>
