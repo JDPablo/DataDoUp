@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 @Component({
   selector: 'app-data',
   templateUrl: './data.component.html',
   styleUrls: ['./data.component.css']
 })
 export class DataComponent implements OnInit {
-  weekNum: FormGroup;
-  constructor(fb: FormBuilder) {
-    this.weekNum = fb.group({
-      weekone: false,
-      weektwo: false,
-    })
+
+  weekNum: FormGroup ;
+  weekone: boolean;
+  weektwo: boolean;
+
+  constructor(private fb: FormBuilder) {
+    
+    this.weekNum = this.fb.group({
+      weekone: new FormControl,
+      weektwo: new FormControl
+    });
+    this.weekone = false;
+    this.weektwo = false;
   }
-  checked = false;
+  
   ngOnInit(): void {
   }
 }
