@@ -1,11 +1,10 @@
 .button-row {
-    margin:auto;
-    display:flex;  
-    width: 500px;
-    justify-content: center;
-
+  margin: auto;
+  display: flex;
+  width: 500px;
+  justify-content: center;
 }
 
 .button-row .mat-button-base {
-    margin: 8px 8px 8px 8px;
-  }
+  margin: 8px 8px 8px 8px;
+}

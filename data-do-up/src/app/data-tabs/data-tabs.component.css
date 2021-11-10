@@ -1,38 +1,38 @@
-
-.mat-tab-group { 
+.mat-tab-group {
   background-color: white;
-    width: 700px;
-    display: block;
-    overflow-y: scroll;
-    max-height: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border:1px solid #aaa;
-  }
+  width: 700px;
+  display: block;
+  overflow-y: scroll;
+  max-height: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #aaa;
+}
 
-  .content{
-    padding: 10px;
-    background-color: #fff;
-    margin: 5px;
-  }
+.content {
+  padding: 10px;
+  background-color: #fff;
+  margin: 5px;
+}
 
-  .heading{
-    font-weight: bold;
+.heading {
+  font-weight: bold;
+}
 
+#divChart {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
 
-  }
-
-  #divChart{
-    display: block;
-    width: 400px;
-    height: 400px;
-  }
-  
-  h1 {text-align: center;
+h1 {
+  text-align: center;
   box-sizing: content-box;
   size: 8px;
-  border-bottom:1px solid#0e38f1; 
-  padding: .005em;}
-  h2 {text-align: right;
-      size: 8;
-  }
+  border-bottom: 1px solid#0e38f1;
+  padding: 0.005em;
+}
+h2 {
+  text-align: right;
+  size: 8;
+}

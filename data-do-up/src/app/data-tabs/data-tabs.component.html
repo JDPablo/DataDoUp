@@ -4,146 +4,244 @@
   </mat-tab>
   <mat-tab label="Mined + Visualized">
     <tr>
-      <div class="content" > <td> Employee ID: </td>
-      
-      <td>{{data[0].employeeInfo.anonymizedID}} </td>
-      
+      <div class="content">
+        <td>Employee ID:</td>
+
+        <td>{{ data[0].employeeInfo.anonymizedID }}</td>
       </div>
-      </tr>
-      <div class="content"> 
+    </tr>
+    <div class="content">
       <tr>
-      <u>Employee Info:</u>
-      </tr> 
-      <tr>
-      <td> Job Title: {{data[0].employeeInfo.jobTitle}} </td>
+        <u>Employee Info:</u>
       </tr>
       <tr>
-      <td> Months on the job: {{data[0].employeeInfo.monthsOnJob}} </td>
+        <td>Job Title: {{ data[0].employeeInfo.jobTitle }}</td>
       </tr>
-      </div>
-    
-     
-      <div class="content"> <strong>Week of 10/04/21 </strong>
-     <tr>
-      <u>Insights</u> <br>
-        Happiness Rating: {{data[0].employeeInputs.happinessRating}} <br>
-        Minutes in Relax Room: {{data[0].employeeInputs.minInRelaxRoom}} <br>
-        Number of projects: {{data[0].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[0].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-      <br>
       <tr>
-        <ngx-charts-bar-vertical [results]="one" 
+        <td>Months on the job: {{ data[0].employeeInfo.monthsOnJob }}</td>
+      </tr>
+    </div>
+
+    <div class="content">
+      <strong>Week of 10/04/21 </strong>
+      <tr>
+        <u>Insights</u>
+        <br />
+        Happiness Rating:
+        {{
+          data[0].employeeInputs.happinessRating
+        }}
+        <br />
+        Minutes in Relax Room:
+        {{
+          data[0].employeeInputs.minInRelaxRoom
+        }}
+        <br />
+        Number of projects:
+        {{
+          data[0].employeeInputs.numOfActiveProjects
+        }}
+        <br />
+        Stress Level:
+        {{
+          data[0].employeeInputs.stressRating
+        }}
+      </tr>
+    </div>
+    <br />
+    <tr>
+      <ngx-charts-bar-vertical
+        [results]="one"
         [view]="view"
         [xAxis]="xAxis"
         [showDataLabel]="showDataLabel"
         [showGridLines]="showGridLines"
-        >
-        </ngx-charts-bar-vertical>
-      </tr>
-      <br>
-      <div class="content"> <strong>Week of 9/27/21</strong>
-      <tr>
-      <u>Insights</u> <br>
-        Happiness Rating: {{data[2].employeeInputs.happinessRating}} <br>
-        Minutes in Relax Room: {{data[2].employeeInputs.minInRelaxRoom}} <br>
-        Number of projects: {{data[2].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[2].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-      <br>
-      <tr>
-        <ngx-charts-bar-vertical [results]="two" [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines">
-        </ngx-charts-bar-vertical>
-      </tr>
-      <br>
-    <hr>
-    <tr>
-      <div class="content" > <td> Employee ID: </td>
-      
-      <td>{{data[1].employeeInfo.anonymizedID}} </td>
-      
-      </div>
-      </tr>
-      <div class="content"> 
-      <tr>
-      <u>Employee Info:</u>
-      </tr> 
-      <tr>
-      <td> Job Title: {{data[1].employeeInfo.jobTitle}} </td>
-      </tr>
-      <tr>
-      <td> Months on the job: {{data[1].employeeInfo.monthsOnJob}} </td>
-      </tr>
-      </div>
-    
-     
-      <div class="content"> <strong>Week of 10/04/21 </strong>
-     <tr>
-      <u>Insights</u> <br>
-        Happiness Rating: {{data[1].employeeInputs.happinessRating}} <br>
-        Minutes in Relax Room: {{data[1].employeeInputs.minInRelaxRoom}} <br>
-        Number of projects: {{data[1].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[1].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-      <br>
-      <tr>
-        <ngx-charts-bar-vertical [results]="three" [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines">
-        </ngx-charts-bar-vertical>
-      </tr>
-      <br>
-      <div class="content"> <strong>Week of 9/27/21</strong>
-      <tr>
-      <u>Insights</u> <br>
-        Happiness Rating: {{data[3].employeeInputs.happinessRating}} <br>
-        Minutes in Relax Room: {{data[3].employeeInputs.minInRelaxRoom}} <br>
-        Number of projects: {{data[3].employeeInputs.numOfActiveProjects}} <br>
-        Stress Level: {{data[3].employeeInputs.stressRating}} 
-        </tr>
-      </div>
-    <br>
-    <tr>
-      <ngx-charts-bar-vertical [results]="four" [view]="view"
-      [xAxis]="xAxis"
-      [showDataLabel]="showDataLabel"
-      [showGridLines]="showGridLines">
+      >
       </ngx-charts-bar-vertical>
     </tr>
-    <br>
+    <br />
+    <div class="content">
+      <strong>Week of 9/27/21</strong>
+      <tr>
+        <u>Insights</u>
+        <br />
+        Happiness Rating:
+        {{
+          data[2].employeeInputs.happinessRating
+        }}
+        <br />
+        Minutes in Relax Room:
+        {{
+          data[2].employeeInputs.minInRelaxRoom
+        }}
+        <br />
+        Number of projects:
+        {{
+          data[2].employeeInputs.numOfActiveProjects
+        }}
+        <br />
+        Stress Level:
+        {{
+          data[2].employeeInputs.stressRating
+        }}
+      </tr>
+    </div>
+    <br />
+    <tr>
+      <ngx-charts-bar-vertical
+        [results]="two"
+        [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines"
+      >
+      </ngx-charts-bar-vertical>
+    </tr>
+    <br />
+    <hr />
+    <tr>
+      <div class="content">
+        <td>Employee ID:</td>
+
+        <td>{{ data[1].employeeInfo.anonymizedID }}</td>
+      </div>
+    </tr>
+    <div class="content">
+      <tr>
+        <u>Employee Info:</u>
+      </tr>
+      <tr>
+        <td>Job Title: {{ data[1].employeeInfo.jobTitle }}</td>
+      </tr>
+      <tr>
+        <td>Months on the job: {{ data[1].employeeInfo.monthsOnJob }}</td>
+      </tr>
+    </div>
+
+    <div class="content">
+      <strong>Week of 10/04/21 </strong>
+      <tr>
+        <u>Insights</u>
+        <br />
+        Happiness Rating:
+        {{
+          data[1].employeeInputs.happinessRating
+        }}
+        <br />
+        Minutes in Relax Room:
+        {{
+          data[1].employeeInputs.minInRelaxRoom
+        }}
+        <br />
+        Number of projects:
+        {{
+          data[1].employeeInputs.numOfActiveProjects
+        }}
+        <br />
+        Stress Level:
+        {{
+          data[1].employeeInputs.stressRating
+        }}
+      </tr>
+    </div>
+    <br />
+    <tr>
+      <ngx-charts-bar-vertical
+        [results]="three"
+        [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines"
+      >
+      </ngx-charts-bar-vertical>
+    </tr>
+    <br />
+    <div class="content">
+      <strong>Week of 9/27/21</strong>
+      <tr>
+        <u>Insights</u>
+        <br />
+        Happiness Rating:
+        {{
+          data[3].employeeInputs.happinessRating
+        }}
+        <br />
+        Minutes in Relax Room:
+        {{
+          data[3].employeeInputs.minInRelaxRoom
+        }}
+        <br />
+        Number of projects:
+        {{
+          data[3].employeeInputs.numOfActiveProjects
+        }}
+        <br />
+        Stress Level:
+        {{
+          data[3].employeeInputs.stressRating
+        }}
+      </tr>
+    </div>
+    <br />
+    <tr>
+      <ngx-charts-bar-vertical
+        [results]="four"
+        [view]="view"
+        [xAxis]="xAxis"
+        [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines"
+      >
+      </ngx-charts-bar-vertical>
+    </tr>
+    <br />
   </mat-tab>
 
   <mat-tab label="Report">
     <div>
-      <input type="button" value="Download PDF" (click)="toPDF()"/>
-    </div>    
-    <div class="content" id='contentToConvert' style="padding: 0.5in; box-sizing: content-box;"> 
+      <input type="button" value="Download PDF" (click)="toPDF()" />
+    </div>
+    <div
+      class="content"
+      id="contentToConvert"
+      style="padding: 0.5in; box-sizing: content-box"
+    >
       <h1>Hello, Delos Labs Employees!</h1>
-     <br>
-      Good job getting through the week of  <b>11/12/21</b>. We have some data that we are proud of: <br> <br>
+      <br />
+      Good job getting through the week of <b>11/12/21</b>. We have some data
+      that we are proud of: <br />
+      <br />
       <ul>
-        <li>Our overall employee happiness rating is up 10%! This is on top of the 3% increase from last week.</li>
-        <li>Likely as a result from the above increase, productivity has skyrocketed 22.5% since last week. Keep it up, everyone.</li>
+        <li>
+          Our overall employee happiness rating is up 10%! This is on top of the
+          3% increase from last week.
+        </li>
+        <li>
+          Likely as a result from the above increase, productivity has
+          skyrocketed 22.5% since last week. Keep it up, everyone.
+        </li>
       </ul>
-       <br> <br>
-        There are a few things we would like to recommend to help maintain this great momentum: <br>
-        <ul>
-          <li>As a result of the holidays approaching soon, employees have reported that they are facing an increased number of
-            external stressors. Please make sure to communicate with HR to discuss taking vacation time. </li>
-          <li>If you are feeling extra stress, feel free to visit the relaxation room in the office to relax!</li>
-        </ul>
-      <br>
-      Overall, Delos Labs is proud of the productivity of our employees this week. Please contact us if there is anything we can do to assist
-      in reducing stress. We can't wait to see you next week!
+      <br />
+      <br />
+      There are a few things we would like to recommend to help maintain this
+      great momentum: <br />
+      <ul>
+        <li>
+          As a result of the holidays approaching soon, employees have reported
+          that they are facing an increased number of external stressors. Please
+          make sure to communicate with HR to discuss taking vacation time.
+        </li>
+        <li>
+          If you are feeling extra stress, feel free to visit the relaxation
+          room in the office to relax!
+        </li>
+      </ul>
+      <br />
+      Overall, Delos Labs is proud of the productivity of our employees this
+      week. Please contact us if there is anything we can do to assist in
+      reducing stress. We can't wait to see you next week!
       <h2>- Delos Labs Management</h2>
-    <br> <br> 
+      <br />
+      <br />
     </div>
   </mat-tab>
-
+</mat-tab-group>
