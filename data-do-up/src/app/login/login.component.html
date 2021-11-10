@@ -1,23 +1,30 @@
 <div id="login_text">
-    <p> Enter Employee Code</p>
+  <p>Enter Employee Code</p>
 </div>
 <div id="login_box">
-    <form>
-        <input  onfocus="this.value = ''"
-        type="text"
-        id="login"
-        name="login"
-        value="xxx-xxx"
-        [(ngModel)]="login123"
-        maxlength="6"
-        style="text-align: center; padding: 10px"
-        ><br>
-    </form>
+  <form>
+    <input
+      onfocus="this.value = ''"
+      type="text"
+      id="login"
+      name="login"
+      value="xxx-xxx"
+      [(ngModel)]="login123"
+      maxlength="6"
+      style="text-align: center; padding: 10px"
+    /><br />
+  </form>
 </div>
 
-
-    <div *ngIf="login123 == id1 || login123 == id2 || login123 == id3">
-        <div id="submit">
-    <a class="card" rel="noopener" style="background-color:#5555ff; color:#fff" routerLink='/data'> Submit</a>
-    </div>
+<div *ngIf="login123 == id1 || login123 == id2 || login123 == id3">
+  <div id="submit">
+    <a
+      class="card"
+      rel="noopener"
+      style="background-color: #5555ff; color: #fff"
+      routerLink="/data"
+    >
+      Submit</a
+    >
+  </div>
 </div>

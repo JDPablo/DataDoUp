@@ -18,7 +18,7 @@ import { RawDataComponent } from './raw-data/raw-data.component';
     DataTabsComponent,
     LoginComponent,
     DataComponent,
-    RawDataComponent
+    RawDataComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,9 +26,9 @@ import { RawDataComponent } from './raw-data/raw-data.component';
     MatTabsModule,
     BrowserAnimationsModule,
     FormsModule,
-    NgxChartsModule
+    NgxChartsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
