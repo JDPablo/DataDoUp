@@ -4,6 +4,286 @@
             "employeeInfo": {
                 "anonymizedID": "10436569",
                 "jobTitle": "Product Manager",
+                "monthsOnJob": 14
+            },
+            "date": "11/22/21",
+            "employeeInputs": {
+            "happinessRating": 90,
+            "stressRating": 20,
+            "minInRelaxRoom": 10,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "wedding planning",
+                "work": "managing new project"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 2
+            },
+            "date": "11/22/21",
+            "employeeInputs": {
+            "happinessRating": 90,
+            "stressRating": 20,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 2
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "short deadlines"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 13
+            },
+            "date": "11/15/21",
+            "employeeInputs": {
+            "happinessRating": 70,
+            "stressRating": 20,
+            "minInRelaxRoom": 20,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "lost a member on the team"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 1
+            },
+            "date": "11/15/21",
+            "employeeInputs": {
+            "happinessRating": 90,
+            "stressRating": 20,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 2
+            },
+            "specificStressors": {
+                "personal": "looking at apartments",
+                "work": ""
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 13
+            },
+            "date": "11/08/21",
+            "employeeInputs": {
+            "happinessRating": 90,
+            "stressRating": 20,
+            "minInRelaxRoom": 20,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "acceptance testing"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 1
+            },
+            "date": "11/08/21",
+            "employeeInputs": {
+            "happinessRating": 70,
+            "stressRating": 40,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 2
+            },
+            "specificStressors": {
+                "personal": "no money",
+                "work": "presentation to stakeholders"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 13
+            },
+            "date": "11/01/21",
+            "employeeInputs": {
+            "happinessRating": 80,
+            "stressRating": 20,
+            "minInRelaxRoom": 10,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "relationship issues",
+                "work": "too many meetings"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 1
+            },
+            "date": "11/01/21",
+            "employeeInputs": {
+            "happinessRating": 80,
+            "stressRating": 30,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 2
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "assigned a new project"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 13
+            },
+            "date": "10/25/21",
+            "employeeInputs": {
+            "happinessRating": 100,
+            "stressRating": 20,
+            "minInRelaxRoom": 20,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "rent payment approaching",
+                "work": ""
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 1
+            },
+            "date": "10/25/21",
+            "employeeInputs": {
+            "happinessRating": 100,
+            "stressRating": 30,
+            "minInRelaxRoom": 0,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "no money",
+                "work": "finding major defects"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 12
+            },
+            "date": "10/18/21",
+            "employeeInputs": {
+            "happinessRating": 70,
+            "stressRating": 30,
+            "minInRelaxRoom": 10,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "no sleep",
+                "work": "3 active projects with deadlines approaching"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 0
+            },
+            "date": "10/18/21",
+            "employeeInputs": {
+            "happinessRating": 80,
+            "stressRating": 10,
+            "minInRelaxRoom": 5,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "family issues",
+                "work": "new environment"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
+                "monthsOnJob": 12
+            },
+            "date": "10/11/21",
+            "employeeInputs": {
+            "happinessRating": 80,
+            "stressRating": 20,
+            "minInRelaxRoom": 20,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": true,
+            "numOfActiveProjects": 3
+            },
+            "specificStressors": {
+                "personal": "",
+                "work": "getting assigned to 2 new projects"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10410410",
+                "jobTitle": "Software Engineer Intern",
+                "monthsOnJob": 0
+            },
+            "date": "10/11/21",
+            "employeeInputs": {
+            "happinessRating": 90,
+            "stressRating": 10,
+            "minInRelaxRoom": 5,
+            "hadVacationInLastThreeMonths": false,
+            "hadVacationInLastSixMonths": false,
+            "numOfActiveProjects": 1
+            },
+            "specificStressors": {
+                "personal": "no money",
+                "work": "upcoming end to sprint"
+            }
+        },
+        {
+            "employeeInfo": {
+                "anonymizedID": "10436569",
+                "jobTitle": "Product Manager",
                 "monthsOnJob": 12
             },
             "date": "10/4/21",
