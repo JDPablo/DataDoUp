@@ -7,7 +7,8 @@ import weeklyData from '../data-tabs/data.json';
   styleUrls: ['./raw-data.component.css'],
 })
 export class RawDataComponent {
-  index: any;
-
+  
+  index?: number;
   data = weeklyData.employees;
+  
 }
