@@ -1,6 +1,10 @@
+<div id="rcontainer">
+</div>
+
 <div id="login_text">
   <p>Enter Employee Code</p>
 </div>
+
 <div id="login_box">
   <form>
     <input
@@ -16,7 +20,7 @@
   </form>
 </div>
 
-<div *ngIf="login123 == id1 || login123 == id2 || login123 == id3">
+<div *ngIf="login123 == id2 || login123 == id3">
   <div id="submit">
     <a
       class="card"
@@ -25,6 +29,19 @@
       routerLink="/data"
     >
       Submit</a
+    >
+  </div>
+</div>
+
+<div *ngIf="login123 == id1">
+  <div id="submit_admin">
+    <a
+      class="card"
+      rel="noopener"
+      style="background-color: #ff9900; color: #fff"
+      routerLink="/data"
+    >
+      Admin</a
     >
   </div>
 </div>

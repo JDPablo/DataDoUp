@@ -8,3 +8,19 @@
 .button-row .mat-button-base {
   margin: 8px 8px 8px 8px;
 }
+
+div.logo {
+  background-image:url('src\ddu_full.png');
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  top: 8%;
+  padding: 38.5px; 
+  width: 53px;
+  height: 47px;  
+}
