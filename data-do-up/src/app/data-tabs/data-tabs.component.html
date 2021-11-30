@@ -29,34 +29,29 @@
         <br />
         Happiness Rating:
         {{
-          data[0].employeeInputs.happinessRating
+        data[0].employeeInputs.happinessRating
         }}
         <br />
         Minutes in Relax Room:
         {{
-          data[0].employeeInputs.minInRelaxRoom
+        data[0].employeeInputs.minInRelaxRoom
         }}
         <br />
         Number of projects:
         {{
-          data[0].employeeInputs.numOfActiveProjects
+        data[0].employeeInputs.numOfActiveProjects
         }}
         <br />
         Stress Level:
         {{
-          data[0].employeeInputs.stressRating
+        data[0].employeeInputs.stressRating
         }}
       </tr>
     </div>
     <br />
     <tr>
-      <ngx-charts-bar-vertical
-        [results]="one"
-        [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines"
-      >
+      <ngx-charts-bar-vertical [results]="one" [view]="view" [xAxis]="xAxis" [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
       </ngx-charts-bar-vertical>
     </tr>
     <br />
@@ -67,34 +62,29 @@
         <br />
         Happiness Rating:
         {{
-          data[2].employeeInputs.happinessRating
+        data[2].employeeInputs.happinessRating
         }}
         <br />
         Minutes in Relax Room:
         {{
-          data[2].employeeInputs.minInRelaxRoom
+        data[2].employeeInputs.minInRelaxRoom
         }}
         <br />
         Number of projects:
         {{
-          data[2].employeeInputs.numOfActiveProjects
+        data[2].employeeInputs.numOfActiveProjects
         }}
         <br />
         Stress Level:
         {{
-          data[2].employeeInputs.stressRating
+        data[2].employeeInputs.stressRating
         }}
       </tr>
     </div>
     <br />
     <tr>
-      <ngx-charts-bar-vertical
-        [results]="two"
-        [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines"
-      >
+      <ngx-charts-bar-vertical [results]="two" [view]="view" [xAxis]="xAxis" [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
       </ngx-charts-bar-vertical>
     </tr>
     <br />
@@ -125,34 +115,29 @@
         <br />
         Happiness Rating:
         {{
-          data[1].employeeInputs.happinessRating
+        data[1].employeeInputs.happinessRating
         }}
         <br />
         Minutes in Relax Room:
         {{
-          data[1].employeeInputs.minInRelaxRoom
+        data[1].employeeInputs.minInRelaxRoom
         }}
         <br />
         Number of projects:
         {{
-          data[1].employeeInputs.numOfActiveProjects
+        data[1].employeeInputs.numOfActiveProjects
         }}
         <br />
         Stress Level:
         {{
-          data[1].employeeInputs.stressRating
+        data[1].employeeInputs.stressRating
         }}
       </tr>
     </div>
     <br />
     <tr>
-      <ngx-charts-bar-vertical
-        [results]="three"
-        [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines"
-      >
+      <ngx-charts-bar-vertical [results]="three" [view]="view" [xAxis]="xAxis" [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
       </ngx-charts-bar-vertical>
     </tr>
     <br />
@@ -163,34 +148,29 @@
         <br />
         Happiness Rating:
         {{
-          data[3].employeeInputs.happinessRating
+        data[3].employeeInputs.happinessRating
         }}
         <br />
         Minutes in Relax Room:
         {{
-          data[3].employeeInputs.minInRelaxRoom
+        data[3].employeeInputs.minInRelaxRoom
         }}
         <br />
         Number of projects:
         {{
-          data[3].employeeInputs.numOfActiveProjects
+        data[3].employeeInputs.numOfActiveProjects
         }}
         <br />
         Stress Level:
         {{
-          data[3].employeeInputs.stressRating
+        data[3].employeeInputs.stressRating
         }}
       </tr>
     </div>
     <br />
     <tr>
-      <ngx-charts-bar-vertical
-        [results]="four"
-        [view]="view"
-        [xAxis]="xAxis"
-        [showDataLabel]="showDataLabel"
-        [showGridLines]="showGridLines"
-      >
+      <ngx-charts-bar-vertical [results]="four" [view]="view" [xAxis]="xAxis" [showDataLabel]="showDataLabel"
+        [showGridLines]="showGridLines">
       </ngx-charts-bar-vertical>
     </tr>
     <br />
@@ -216,7 +196,8 @@
 
       </div>
       <div class="content"> Since your stress rating is {{data[1].employeeInputs.stressRating}} and your number of
-        projects is {{data[1].employeeInputs.numOfActiveProjects}}, we recommend speaking with your team lead about work balance. </div>
+        projects is {{data[1].employeeInputs.numOfActiveProjects}}, we recommend speaking with your team lead about work
+        balance. </div>
     </tr>
     <tr>
       <div class="content">
@@ -227,7 +208,8 @@
 
       </div>
       <div class="content"> Since your number of projects is {{data[2].employeeInputs.numOfActiveProjects}} and your
-        happiness rating is {{data[2].employeeInputs.happinessRating}}, we recommend maintaining your current number of projects. </div>
+        happiness rating is {{data[2].employeeInputs.happinessRating}}, we recommend maintaining your current number of
+        projects. </div>
     </tr>
 
 
@@ -237,14 +219,10 @@
     <div>
       <input type="button" value="Download PDF" (click)="toPDF()" />
     </div>
-    <div
-      class="content"
-      id="contentToConvert"
-      style="padding: 0.5in; box-sizing: content-box"
-    >
+    <div class="content" id="contentToConvert" style="padding: 0.5in; box-sizing: content-box">
       <h1>Hello, Delos Labs Employees!</h1>
       <br />
-      Good job getting through the week of <b>11/12/21</b>. We have some data
+      Good job getting through the week of <b>10/04/21</b>. We have some data
       that we are proud of: <br />
       <br />
       <ul>

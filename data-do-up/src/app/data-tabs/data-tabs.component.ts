@@ -46,5 +46,5 @@ export class DataTabsComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
